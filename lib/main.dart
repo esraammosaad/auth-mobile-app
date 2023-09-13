@@ -1,5 +1,5 @@
-import 'package:auth_mobile_app/views/login_view.dart';
 import 'package:flutter/material.dart';
+import 'Features/authentication/presentation/views/login_view.dart';
 
 void main() {
   runApp(const MyApp());
