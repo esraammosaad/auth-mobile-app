@@ -1,6 +1,6 @@
-import 'package:auth_mobile_app/Features/authentication/presentation/views/login_view.dart';
 import 'package:auth_mobile_app/Features/authentication/presentation/views/profile_view.dart';
 import 'package:auth_mobile_app/Features/authentication/presentation/views/widgets/custom_donot_have_account_row.dart';
+import 'package:auth_mobile_app/constents.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'custom_button.dart';
@@ -81,15 +81,12 @@ class _CustomRegisterFormState extends State<CustomRegisterForm> {
               height: 22,
             ),
             CustomButton(
-                color: const Color(0xFF007BFF),
+                color: kPrimaryColor,
                 text: 'Register',
                 onPressed: () {
                   if (formKey.currentState!.validate()) {
                     formKey.currentState!.save();
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const ProfileView()));
+                    Navigator.pushNamed(context, ProfileView.profileId);
                   }
                   autoValidateMode = AutovalidateMode.always;
                   setState(() {});

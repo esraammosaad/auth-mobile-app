@@ -14,12 +14,15 @@ class CustomProfileContainer extends StatelessWidget {
         border: Border.all(color: const Color(0xff808194)),
         borderRadius: const BorderRadius.all(Radius.circular(10)),
       ),
-      child: Text(
-        text,
-        style: const TextStyle(
-          fontSize: 14,
-          fontWeight: FontWeight.w400,
-          color: Color(0xFF2A2B2E),
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Text(
+          text,
+          style: const TextStyle(
+            fontSize: 14,
+            fontWeight: FontWeight.w400,
+            color: Color(0xFF2A2B2E),
+          ),
         ),
       ),
     );

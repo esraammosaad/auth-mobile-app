@@ -1,10 +1,13 @@
-import 'package:auth_mobile_app/core/utilis/assets.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../../core/utils/assets.dart';
+
 class CustomBackGround extends StatelessWidget {
   const CustomBackGround({
-    super.key, required this.image,
+    super.key,
+    required this.image,
   });
-  final String image;
+  final Image image;
 
   @override
   Widget build(BuildContext context) {
@@ -22,8 +25,8 @@ class CustomBackGround extends StatelessWidget {
             borderRadius: BorderRadius.circular(10.8),
             child: Image.asset(AssetsData.graphicsImage)),
         Padding(
-          padding: const EdgeInsets.only(top: 100.0),
-          child: Image.asset(image),
+          padding: const EdgeInsets.only(top: 75.0),
+          child: image,
         )
       ],
     );

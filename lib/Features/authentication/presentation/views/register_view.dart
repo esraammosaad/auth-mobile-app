@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 
 class RegisterView extends StatelessWidget {
   const RegisterView({Key? key}) : super(key: key);
+  static String registerId='registerView';
+
 
   @override
   Widget build(BuildContext context) {

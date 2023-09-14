@@ -17,7 +17,7 @@ class CustomButton extends StatelessWidget {
         shape: OutlineInputBorder(
             borderRadius: BorderRadius.circular(4),
             borderSide:  BorderSide(color: color)),
-        child: Text(
+        child:  Text(
           text,
           style: const TextStyle(
             color: Colors.white,
