@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import '../../../../../core/utilis/assets.dart';
 import 'custom_background.dart';
-import 'custom_login_form.dart';
-class LoginViewBody extends StatelessWidget {
-  const LoginViewBody({super.key});
+import 'custom_register_form.dart';
+class RegisterViewBody extends StatelessWidget {
+  const RegisterViewBody({super.key});
 
 
 
@@ -14,7 +14,7 @@ class LoginViewBody extends StatelessWidget {
         children: [
           CustomBackGround(image: AssetsData.logoImage),
           const SizedBox(height: 25,),
-          const Text("Log in to your account",
+          const Text("Create new account",
               textAlign: TextAlign.center,
 
 
@@ -23,7 +23,7 @@ class LoginViewBody extends StatelessWidget {
                 fontWeight: FontWeight.w700,
                 color: Color(0xFF2A2B2E),
               )),
-          const CustomLoginForm(),
+          const CustomRegisterForm(),
 
 
         ],
